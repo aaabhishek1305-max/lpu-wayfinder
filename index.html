@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPU Wayfinder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">LPU <span>Wayfinder</span></div>
+    <div class="tag">CAMPUS NAVIGATION</div>
+</header>
+
+<main>
+    <section class="hero">
+        <p>LOVELY PROFESSIONAL UNIVERSITY</p>
+        <h1>Find Your Way Around Campus.</h1>
+        <p class="description">
+            Search buildings, blocks, classrooms and campus facilities.
+            Navigate your campus without getting lost.
+        </p>
+    </section>
+
+    <div class="container">
+
+        <section class="sidebar">
+            <h2>Where do you want to go?</h2>
+
+            <label>Starting Point</label>
+            <select id="origin">
+                <option value="Main Gate 1-A">Main Gate 1-A</option>
+                <option value="Main Gate 1-B">Main Gate 1-B</option>
+                <option value="Eastern Gate 1">Eastern Gate 1</option>
+                <option value="Eastern Gate 2">Eastern Gate 2</option>
+                <option value="Western Gate">Western Gate</option>
+                <option value="BH-4 Playground Gate">BH-4 Playground Gate</option>
+                <option value="My Location">My Current Location</option>
+            </select>
+
+            <label>Search Destination</label>
+            <input
+                type="text"
+                id="search"
+                list="locations"
+                placeholder="Search Block 34, Library..."
+            >
+
+            <datalist id="locations">
+                <option value="Block 34">
+                <option value="Block 18">
+                <option value="Central Library">
+                <option value="Uni Mall">
+                <option value="Uni Hospital">
+                <option value="Block 30">
+                <option value="Sports Complex">
+                <option value="Main Auditorium">
+            </datalist>
+
+            <button onclick="findLocation()" class="search-btn">
+                Find Location
+            </button>
+
+            <h3>Popular Destinations</h3>
+
+            <div class="places">
+                <button onclick="selectPlace('Block 34')">Block 34</button>
+                <button onclick="selectPlace('Block 18')">Block 18</button>
+                <button onclick="selectPlace('Central Library')">Central Library</button>
+                <button onclick="selectPlace('Uni Mall')">Uni Mall</button>
+                <button onclick="selectPlace('Uni Hospital')">Uni Hospital</button>
+                <button onclick="selectPlace('Block 30')">Block 30</button>
+            </div>
+
+            <div id="message">
+                Select a destination to start navigation.
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="map-heading">
+                <h3 id="mapTitle">LPU Campus Map</h3>
+                <span>Interactive Map</span>
+            </div>
+
+            <iframe
+                id="map"
+                src="https://www.google.com/maps?q=Lovely+Professional+University+Phagwara&output=embed"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+        </section>
+
+    </div>
+</main>
+
+<footer>
+    LPU Wayfinder | Design Thinking Project
+    <br>
+    Problem Statement: Which Block Is 34?
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
