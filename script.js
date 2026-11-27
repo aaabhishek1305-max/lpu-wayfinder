@@ -17,33 +17,59 @@ const PLACES = [
     { id: "block-34", name: "Block 34", type: "Academic", icon: "💻", lat: 31.251294, lng: 75.704760, pid: "ChIJFX8kYWZfGjkRGmuw3OxZTos",
       info: "School of Computer Science & Engineering", keys: "34 cse computer" },
     { id: "block-36", name: "Block 36", type: "Academic", icon: "🏢", lat: 31.251577, lng: 75.704123, pid: "ChIJnQxL0qJfGjkRUBy-ZEyN1Qc",
-      info: "Academic block", keys: "36" },
+      info: "School of Electronics and Electrical Engineering", keys: "36 ece eee electronics electrical seee" },
     { id: "block-18", name: "Block 18", type: "Academic", icon: "📖", lat: 31.255200, lng: 75.703739, pid: "ChIJiXvvWQBfGjkRIzM1AQnaqqM",
-      info: "Humanities block, School of Education", keys: "18 humanities education" },
+      info: "Humanities block, School of Education", keys: "18 humanities education bed teaching" },
+    { id: "block-55", name: "Block 55", type: "Academic", icon: "⚙️", lat: 31.247039, lng: 75.703457, pid: "ChIJodiKdGVfGjkROug9lYdMqH4",
+      info: "School of Mechanical Engineering", keys: "55 mechanical" },
+    { id: "block-56", name: "Block 56", type: "Academic", icon: "🧬", lat: 31.246697, lng: 75.703502, pid: "ChIJ8zsJkBdfGjkRdy6bsbm5CSU",
+      info: "School of Bioengineering and Biosciences", keys: "56 bio biotech biotechnology biosciences microbiology" },
+    { id: "block-57", name: "Block 57", type: "Academic", icon: "🌾", lat: 31.246222, lng: 75.703632, pid: "ChIJCaQ5a2VfGjkR-X5ORxA_IAw",
+      info: "School of Agriculture", keys: "57 agriculture farming" },
+    { id: "business", name: "Mittal School of Business", type: "Academic", icon: "💼", lat: 31.254501, lng: 75.705541, pid: "ChIJIxzyDGdfGjkRNH276RGCcz4",
+      info: "Business and management", keys: "business management mba bba" },
+    { id: "architecture", name: "School of Architecture", type: "Academic", icon: "📐", lat: 31.256872, lng: 75.707250, pid: "ChIJaVSU-l1fGjkRSTd50ZxaMng",
+      info: "Architecture, Planning and Design", keys: "architecture design planning barch" },
     { id: "law", name: "School of Law", type: "Academic", icon: "⚖️", lat: 31.254780, lng: 75.701313, pid: "ChIJZ1uwFmhfGjkRnLQmZnREU6U",
       info: "LPU School of Law", keys: "law" },
     { id: "block-30", name: "Block 30", type: "Services", icon: "📝", lat: 31.252714, lng: 75.704784, pid: "ChIJiycKVGZfGjkRBDKjHDVNBiU",
       info: "Division of Admissions", keys: "30 admission fees scholarship" },
     { id: "block-32", name: "Block 32", type: "Services", icon: "🖥️", lat: 31.252012, lng: 75.704588, pid: "ChIJcV7FodzfWKARW-XOLJvbu9I",
-      info: "LPU Online", keys: "32 online" },
+      info: "LPU Online and Alumni Association", keys: "32 online distance alumni" },
     { id: "library", name: "Central Library", type: "Study", icon: "📚", lat: 31.251993, lng: 75.703379, pid: "ChIJAVDMXQBfGjkRWp-hJO178y8",
       info: "Books, digital resources and study space", keys: "library books reading" },
+    { id: "library-19", name: "Block 19–21 Library", type: "Study", icon: "📗", lat: 31.254534, lng: 75.701294, pid: "ChIJhTxSEuJfGjkRSP3dNfPHmU0",
+      info: "Library in the management block", keys: "19 20 21 library management" },
     { id: "auditorium", name: "Main Auditorium", type: "Events", icon: "🎭", lat: 31.252054, lng: 75.704112, pid: "ChIJwbIPRGZfGjkR3gWmDbI7Vco",
       info: "Shanti Devi Mittal Auditorium, Block 35", keys: "35 shanti devi mittal auditorium" },
+    { id: "welfare", name: "Student Welfare", type: "Services", icon: "🤝", lat: 31.255143, lng: 75.706071, pid: "ChIJXdymbmdfGjkRd1SDa6BS2H8",
+      info: "Division of Student Welfare: clubs and activities", keys: "dsw welfare clubs nss ncc dance music" },
+    { id: "international", name: "International Affairs", type: "Services", icon: "🌍", lat: 31.252045, lng: 75.704756, pid: "ChIJd54aXGZfGjkReJGGr1XgEHM",
+      info: "Division of International Affairs", keys: "international foreign abroad dia" },
+    { id: "icici", name: "ICICI Bank", type: "Services", icon: "🏦", lat: 31.255702, lng: 75.705260, pid: "ChIJo5Ydn2hfGjkRk8OT2o5iRAc",
+      info: "Bank branch, Block 15-A", keys: "15 icici bank account" },
     { id: "unipolis", name: "UniPolis", type: "Events", icon: "🎤", lat: 31.255132, lng: 75.704616, pid: "ChIJPyzUhGdfGjkRYuoOd1iI6kc",
       info: "Baldev Raj Mittal UniPolis, open-air event venue", keys: "unipolis stage fest" },
     { id: "unimall", name: "Uni Mall", type: "Food & Shops", icon: "🛍️", lat: 31.255764, lng: 75.705483, pid: "ChIJy8fLfmdfGjkRBxzPwrDdCkw",
-      info: "Shops, banks and eating places", keys: "mall shop bank atm stationery" },
+      info: "Shops, banks and eating places", keys: "mall shop bank atm sbi stationery wh smith" },
     { id: "foodcourt", name: "Main Food Court", type: "Food & Shops", icon: "🍔", lat: 31.249008, lng: 75.701681, pid: "ChIJWfsGW29fGjkR_h9ugIYraxU",
       info: "Campus food court", keys: "food canteen eat lunch" },
+    { id: "sweets", name: "Lovely Sweets", type: "Food & Shops", icon: "🍬", lat: 31.255682, lng: 75.705425, pid: "ChIJX30R7kRfGjkR0DS4HDrRtIM",
+      info: "Sweets, snacks and quick meals, Block 15", keys: "15 sweets snacks samosa coffee bakery food" },
+    { id: "bh2", name: "Boys Hostel 2", type: "Hostels", icon: "🛏️", lat: 31.249815, lng: 75.700579, pid: "ChIJ_STbNG9fGjkRCz_nE-b6UbE",
+      info: "BH-2 residence", keys: "bh-2 bh2 hostel boys" },
     { id: "hospital", name: "Uni Hospital", type: "Services", icon: "🏥", lat: 31.258068, lng: 75.706779, pid: "ChIJcYQEumBfGjkR0bJtfaigc9M",
       info: "Uni Health Center", keys: "hospital health doctor medical emergency" },
     { id: "postoffice", name: "Post Office", type: "Services", icon: "📮", lat: 31.251812, lng: 75.702084, pid: "ChIJ8amDn2hfGjkRtqdgqs8jFEQ",
       info: "Campus sub post office", keys: "post courier parcel" },
     { id: "sports", name: "Main Sports Field", type: "Sports", icon: "⚽", lat: 31.256826, lng: 75.709428, pid: "ChIJha8J6_9fGjkRGbvNbAu2MJI",
-      info: "Playground and sports area", keys: "sports complex ground football playground" },
+      info: "Playground and sports area", keys: "sports ground field football playground track" },
     { id: "cricket", name: "Cricket Ground", type: "Sports", icon: "🏏", lat: 31.247637, lng: 75.700455, pid: "ChIJdci7gjNfGjkRv_aEFyp3Krs",
       info: "LPU cricket ground", keys: "cricket" },
+    { id: "sports-centre", name: "Sports Centre", type: "Sports", icon: "🏋️", lat: 31.250867, lng: 75.701805, pid: "ChIJyxrKpWhfGjkRsccIDLY8goI",
+      info: "Gym, swimming pool and indoor stadium", keys: "sports complex gym swimming pool indoor stadium" },
+    { id: "shooting", name: "Shooting Range", type: "Sports", icon: "🎯", lat: 31.250976, lng: 75.701618, pid: "ChIJuakMGzBfGjkRXJVWNdDEmpM",
+      info: "LPU shooting range", keys: "shooting range rifle" },
     { id: "main-parking", name: "Main Gate Parking", type: "Gates", icon: "🅿️", lat: 31.259798, lng: 75.706087, pid: "ChIJaVPjFFxfGjkRI4h6dmebQEg",
       info: "Parking beside the main gate", keys: "main gate parking entrance" }
 ];
@@ -62,7 +88,7 @@ const GATES = [
 
 const CAMPUS = "Lovely Professional University, Phagwara";
 const CAMPUS_CENTER = { lat: 31.2540, lng: 75.7045 };
-const ICONS = { "Academic": "🎓", "Study": "📚", "Services": "🛎️", "Food & Shops": "🍔", "Events": "🎭", "Sports": "⚽", "Gates": "🚪" };
+const ICONS = { "Academic": "🎓", "Study": "📚", "Services": "🛎️", "Food & Shops": "🍔", "Events": "🎭", "Sports": "⚽", "Hostels": "🛏️", "Gates": "🚪" };
 
 /* ---------- helpers ---------- */
 const $ = id => document.getElementById(id);
@@ -98,7 +124,11 @@ let sortNear = false;
 
 /* ---------- search ---------- */
 function search(text) {
-    const q = text.trim().toLowerCase().replace(/^(block|blk)[\s-]*(?=\d)/, "");
+    const q = text.trim().toLowerCase()
+        .replace(/[?.!]+$/, "")
+        .replace(/^(where\s+is|where's|take\s+me\s+to|go\s+to|navigate\s+to|show\s+me|find)\s+(the\s+)?/, "")
+        .replace(/\bbh[\s-]*(?=\d)/, "bh-")
+        .replace(/^(block|blk)[\s-]*(number\s*|no\.?\s*)?(?=\d)/, "");
     if (!q) return [];
 
     // A number must match a whole block number, so "3" does not match everything
@@ -215,8 +245,12 @@ function route() {
         if (byId(placeId) || GATES.some(g => g.id === placeId)) $("to").value = placeId;
         updateNavigate();
     }
-    if (screen === "home") renderHome();
+    if (screen === "home") {
+        renderHome();
+        showBlock(shown);
+    }
     if (screen === "explore") renderCards();
+    if (screen !== "navigate") stopGuide();
     window.scrollTo(0, 0);
 }
 
@@ -242,13 +276,14 @@ function fillSelects() {
 
     const group = (label, list) => el("optgroup", { label },
         ...list.map(p => new Option(p.name, p.id)));
-    const gates = () => GATES.map(g => ({
+    const gates = () => group("Campus gates", GATES.map(g => ({
         id: g.id, name: hasCoords(point(g.id)) ? g.name : `${g.name} (set location)`
-    }));
+    })));
+    const places = () => Object.keys(ICONS).map(type => group(
+        type === "Gates" ? "Parking" : type, PLACES.filter(p => p.type === type)));
 
-    from.replaceChildren(new Option("📍 My current location", "me"),
-        group("Gates", gates()), group("Campus places", PLACES));
-    to.replaceChildren(group("Campus places", PLACES), group("Gates", gates()));
+    from.replaceChildren(new Option("📍 My current location", "me"), gates(), ...places());
+    to.replaceChildren(...places(), gates());
 
     from.value = keepFrom;
     to.value = keepTo;
@@ -283,6 +318,12 @@ function updateNavigate() {
 
     $("saveBtn").textContent = saved.includes(toId) ? "★ Saved" : "☆ Save";
     $("saveBtn").disabled = !byId(toId);
+    $("guideBtn").disabled = !endOk;
+    // A running guide follows the newly chosen destination
+    if (!$("guide").hidden && guideTarget.id !== toId) {
+        if (endOk) startGuide();
+        else stopGuide();
+    }
 
     $("mapTitle").textContent = end.name;
     $("mapSub").textContent = end.info || "";
@@ -313,7 +354,7 @@ function updateNavigate() {
 
 function setView(next) {
     view = next;
-    document.querySelectorAll(".toggle button").forEach(b => b.classList.toggle("on", b.dataset.view === view));
+    document.querySelectorAll("[data-view]").forEach(b => b.classList.toggle("on", b.dataset.view === view));
     updateNavigate();
 }
 
@@ -331,12 +372,14 @@ function pinGate(lat, lng) {
     save("lpu-pins", pins);
     fillSelects();
     updateNavigate();
-    $("message").textContent = "Gate location saved on this device.";
+    toast("📍 Gate location saved on this device");
 }
 
 function toggleSaved(id) {
-    saved = saved.includes(id) ? saved.filter(s => s !== id) : [...saved, id];
+    const adding = !saved.includes(id);
+    saved = adding ? [...saved, id] : saved.filter(s => s !== id);
     save("lpu-saved", saved);
+    toast(adding ? `★ ${byId(id).name} saved` : `${byId(id).name} removed from saved`);
 }
 
 /* ---------- Home screen ---------- */
@@ -351,11 +394,13 @@ function renderHome() {
 function renderTiles() {
     $("categoryTiles").replaceChildren(...Object.keys(ICONS).map(type => {
         const count = PLACES.filter(p => p.type === type).length;
-        return el("button", {
+        const tile = el("button", {
             type: "button",
             onclick: () => { category = type; $("filter").value = ""; renderFilterChips(); location.hash = "#explore"; }
         }, el("b", { textContent: ICONS[type] }), type,
            el("small", { textContent: `${count} ${count === 1 ? "place" : "places"}` }));
+        tile.dataset.type = type;
+        return tile;
     }));
 }
 
@@ -398,8 +443,11 @@ function submitSearch() {
 
 /* ---------- Explore screen ---------- */
 function renderFilterChips() {
-    $("filterChips").replaceChildren(...["All", "★ Saved", ...Object.keys(ICONS)].map(type =>
-        button(type, () => { category = type; renderFilterChips(); renderCards(); }, type === category ? "on" : "")));
+    $("filterChips").replaceChildren(...["All", "★ Saved", ...Object.keys(ICONS)].map(type => {
+        const chip = button(type, () => { category = type; renderFilterChips(); renderCards(); }, type === category ? "on" : "");
+        if (ICONS[type]) chip.dataset.type = type;
+        return chip;
+    }));
 }
 
 function renderCards() {
@@ -415,7 +463,7 @@ function renderCards() {
         const star = button(isSaved ? "★" : "☆", () => { toggleSaved(p.id); renderCards(); }, "star");
         star.setAttribute("aria-label", `${isSaved ? "Remove" : "Save"} ${p.name}`);
 
-        return el("article", { className: "card" },
+        const card = el("article", { className: "card" },
             el("div", { className: "card-top" }, el("b", { textContent: p.icon }), star),
             el("h3", { textContent: p.name }),
             el("p", { textContent: p.info }),
@@ -426,18 +474,347 @@ function renderCards() {
                     className: "btn secondary", textContent: "Directions ↗",
                     href: directionsUrl("me", p), target: "_blank", rel: "noopener noreferrer"
                 })));
+        card.dataset.type = p.type;
+        return card;
     }));
 
     $("exploreNote").textContent = list.length
         ? `${list.length} ${list.length === 1 ? "place" : "places"}`
         : "Nothing found. Try another word or filter.";
+
+    $("cards").hidden = layout !== "list";
+    $("pinMapWrap").hidden = layout !== "map";
+    if (layout === "map") renderPinMap(list);
 }
 
 function setViewButtons() {
-    document.querySelectorAll(".toggle button").forEach(b => b.classList.toggle("on", b.dataset.view === view));
+    document.querySelectorAll("[data-view]").forEach(b => b.classList.toggle("on", b.dataset.view === view));
+}
+
+/* ---------- pop-up messages ---------- */
+let toastTimer;
+
+function toast(text) {
+    $("toast").textContent = text;
+    $("toast").classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => $("toast").classList.remove("show"), 3500);
+}
+
+/* ---------- "I need..." shortcuts ---------- */
+const NEEDS = [
+    { icon: "🏥", label: "A doctor", ids: ["hospital"] },
+    { icon: "🍔", label: "Food", ids: ["foodcourt", "unimall", "sweets"] },
+    { icon: "📚", label: "To study", ids: ["library", "library-19"] },
+    { icon: "📝", label: "Admission help", ids: ["block-30"] },
+    { icon: "🏧", label: "Bank or shop", ids: ["icici", "unimall"] },
+    { icon: "📮", label: "To send a parcel", ids: ["postoffice"] },
+    { icon: "⚽", label: "To play", ids: ["sports-centre", "sports", "cricket"] }
+];
+
+function meetNeed(need) {
+    const open = (id, note) => { goTo(id); toast(note); };
+    const [first] = need.ids;
+
+    if (need.ids.length === 1) {
+        open(first, `${need.icon} Showing ${byId(first).name}`);
+        return;
+    }
+
+    toast("📡 Finding the nearest one...");
+    const from = location.hash;
+    locate(pos => {
+        if (location.hash !== from) return;      // visitor has moved on
+        const [best] = need.ids.map(byId).sort((a, b) => metres(pos, a) - metres(pos, b));
+        open(best.id, `${need.icon} Nearest: ${best.name}, ${pretty(metres(pos, best))} away`);
+    }, () => {
+        if (location.hash !== from) return;
+        open(first, `Showing ${byId(first).name}. Allow location to get the nearest one.`);
+    });
+}
+
+function renderNeeds() {
+    $("needs").replaceChildren(...NEEDS.map(need => {
+        const item = el("button", { type: "button", onclick: () => meetNeed(need) },
+            el("b", { textContent: need.icon }), need.label);
+        item.dataset.type = byId(need.ids[0]).type;
+        return item;
+    }));
+}
+
+/* ---------- tappable pin map ---------- */
+let layout = "list";
+let zoom = 1;
+let pinned = null;
+
+function renderPinMap(list) {
+    const board = $("pinMap");
+    const pad = 30;
+    const shrink = Math.cos(CAMPUS_CENTER.lat * Math.PI / 180);
+    const lats = PLACES.map(p => p.lat);
+    const lngs = PLACES.map(p => p.lng);
+    const north = Math.max(...lats), south = Math.min(...lats);
+    const west = Math.min(...lngs), east = Math.max(...lngs);
+
+    // At normal zoom the whole campus fits on the screen
+    const room = $("pinScroll").clientWidth;
+    const tallest = Math.min(640, Math.max(420, window.innerHeight * 0.65));
+    const scale = zoom * Math.min((tallest - 2 * pad) / (north - south),
+        (room - 2 * pad) / ((east - west) * shrink));
+    const height = (north - south) * scale + 2 * pad;
+    const mapWidth = (east - west) * shrink * scale;
+    const width = Math.max(room, mapWidth + 2 * pad);
+    const left = (width - mapWidth) / 2;
+    const place = p => ({ x: left + (p.lng - west) * shrink * scale, y: pad + (north - p.lat) * scale });
+
+    const space = room < 500 ? 36 : 44;
+
+    // Nudge overlapping pins apart so each one can be tapped
+    const dots = list.map(p => ({ p, ...place(p) }));
+    for (let pass = 0; pass < 200; pass++) {
+        for (let i = 0; i < dots.length; i++) {
+            for (let j = i + 1; j < dots.length; j++) {
+                const a = dots[i], b = dots[j];
+                const dx = b.x - a.x, dy = b.y - a.y;
+                const gap = Math.hypot(dx, dy) || 0.1;
+                if (gap >= space) continue;
+                const push = (space - gap) / 2 / gap;
+                a.x -= dx * push; a.y -= dy * push;
+                b.x += dx * push; b.y += dy * push;
+            }
+        }
+        dots.forEach(d => {
+            d.x = Math.min(width - 22, Math.max(22, d.x));
+            d.y = Math.min(height - 22, Math.max(22, d.y));
+        });
+    }
+
+    board.style.width = `${width}px`;
+    board.style.height = `${height}px`;
+    board.replaceChildren(...dots.map(({ p, x, y }) => {
+        const number = p.name.match(/^Block (\d+)$/);
+        const pin = button(number ? number[1] : p.icon, () => {
+            pinned = p.id;
+            renderCards();
+            $("pinInfo").scrollIntoView({ block: "nearest", behavior: "smooth" });
+        },
+            p.id === pinned ? "pin on" : "pin");
+        pin.style.left = `${x}px`;
+        pin.style.top = `${y}px`;
+        pin.title = p.name;
+        pin.dataset.type = p.type;
+        pin.setAttribute("aria-label", p.name);
+        return pin;
+    }));
+
+    if (me && me.lat <= north && me.lat >= south && me.lng >= west && me.lng <= east) {
+        const { x, y } = place(me);
+        const dot = el("span", { className: "you", title: "You are here" });
+        dot.style.left = `${x}px`;
+        dot.style.top = `${y}px`;
+        board.append(dot);
+    }
+
+    const chosen = list.find(p => p.id === pinned);
+    $("pinInfo").hidden = !chosen;
+    if (!chosen) return;
+    $("pinInfo").dataset.type = chosen.type;
+
+    $("pinInfo").replaceChildren(
+        el("h3", { textContent: `${chosen.icon} ${chosen.name}` }),
+        el("p", { textContent: chosen.info }),
+        el("span", { className: "distance", textContent: me ? `${pretty(metres(me, chosen))} from you (straight line)` : "" }),
+        el("div", { className: "row" },
+            button("Show on map", () => { view = "place"; setViewButtons(); goTo(chosen.id); }, "btn secondary"),
+            button(saved.includes(chosen.id) ? "★ Saved" : "☆ Save",
+                () => { toggleSaved(chosen.id); renderCards(); }, "btn secondary"),
+            el("a", {
+                className: "btn secondary", textContent: "Directions ↗",
+                href: directionsUrl("me", chosen), target: "_blank", rel: "noopener noreferrer"
+            })));
+}
+
+/* ---------- live walking guide ---------- */
+let watchId = null;
+let guideTarget = null;
+let startDistance = 0;
+let spokenStep = null;
+let voiceOn = false;
+let wakeLock = null;
+
+const DIRECTIONS = ["north", "north-east", "east", "south-east", "south", "south-west", "west", "north-west"];
+
+// Compass bearing from a to b, in degrees clockwise from north
+function bearing(a, b) {
+    const rad = d => d * Math.PI / 180;
+    const dLng = rad(b.lng - a.lng);
+    const y = Math.sin(dLng) * Math.cos(rad(b.lat));
+    const x = Math.cos(rad(a.lat)) * Math.sin(rad(b.lat)) -
+        Math.sin(rad(a.lat)) * Math.cos(rad(b.lat)) * Math.cos(dLng);
+    return (Math.atan2(y, x) * 180 / Math.PI + 360) % 360;
+}
+
+function speak(text) {
+    if (!voiceOn || !window.speechSynthesis) return;
+    speechSynthesis.cancel();
+    speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+}
+
+function stopWatching() {
+    if (watchId !== null) navigator.geolocation.clearWatch(watchId);
+    watchId = null;
+    wakeLock?.release().catch(() => {});
+    wakeLock = null;
+}
+
+function stopGuide() {
+    stopWatching();
+    window.speechSynthesis?.cancel();
+    $("guide").hidden = true;
+    document.body.classList.remove("guiding");
+}
+
+function startGuide() {
+    const id = $("to").value;
+    const target = point(id);
+    if (!hasCoords(target)) return;
+    if (!navigator.geolocation) { toast("GPS is not supported by your browser."); return; }
+
+    stopWatching();
+    guideTarget = { ...target, id };
+    startDistance = 0;
+    spokenStep = null;
+
+    $("guide").hidden = false;
+    document.body.classList.add("guiding");
+    $("guideTitle").textContent = `To ${target.name}`;
+    $("guideStop").textContent = "Stop guide";
+    $("guideDist").textContent = "Waiting for GPS...";
+    $("guideDir").textContent = "";
+    $("guideBar").value = 0;
+    $("arrow").style.transform = "";
+
+    // Keep the screen awake where the browser allows it
+    navigator.wakeLock?.request("screen").then(lock => {
+        if (watchId === null) lock.release();
+        else wakeLock = lock;
+    }).catch(() => {});
+
+    watchId = navigator.geolocation.watchPosition(updateGuide, err => {
+        if (err.code === 1) {
+            stopWatching();
+            $("guideDist").textContent = "Location blocked";
+            $("guideDir").textContent = "Allow location in your browser settings, then start again.";
+        } else {
+            $("guideDir").textContent = "GPS signal is weak. Still trying...";
+        }
+    }, { enableHighAccuracy: true, maximumAge: 2000, timeout: 20000 });
+}
+
+function updateGuide(pos) {
+    const { latitude: lat, longitude: lng, accuracy, heading, speed } = pos.coords;
+    me = { lat, lng, accuracy };
+
+    const left = metres(me, guideTarget);
+    startDistance = Math.max(startDistance, left);
+
+    if (left <= 30 && accuracy <= 50) {
+        stopWatching();
+        $("guideDist").textContent = "🎉 You've arrived!";
+        $("guideDir").textContent = `${guideTarget.name} is within about ${Math.round(Math.max(left, accuracy))} m. Look for the entrance.`;
+        $("guideBar").value = 100;
+        $("guideStop").textContent = "Done";
+        navigator.vibrate?.([200, 100, 200]);
+        speak(`You have arrived near ${guideTarget.name}`);
+        return;
+    }
+
+    const toward = bearing(me, guideTarget);
+    const compass = DIRECTIONS[Math.round(toward / 45) % 8];
+    // While walking, some phones report heading: point the arrow relative to it
+    const moving = Number.isFinite(heading) && speed > 0.5;
+
+    $("arrow").style.transform = `rotate(${moving ? toward - heading : toward}deg)`;
+    document.querySelector(".north").hidden = moving;
+    $("guideDist").textContent = `${pretty(left)} to go`;
+    $("guideDir").textContent = (moving ? "Arrow is relative to the way you are walking" : `Head ${compass}`) +
+        ` · GPS ±${Math.round(accuracy)} m`;
+    $("guideBar").value = startDistance ? 100 * (1 - left / startDistance) : 0;
+
+    const step = Math.ceil(left / 100);
+    if (step !== spokenStep && (spokenStep === null || step < spokenStep)) {
+        spokenStep = step;
+        speak(`${Math.round(left)} metres to ${guideTarget.name}. It is to the ${compass}.`);
+    }
+}
+
+/* ---------- voice search ---------- */
+function setupVoice() {
+    const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!Recognition) return;               // button stays hidden
+
+    const mic = $("micBtn");
+    let listening = null;
+    mic.hidden = false;
+
+    mic.addEventListener("click", () => {
+        if (listening) { listening.stop(); return; }
+
+        const rec = new Recognition();
+        rec.lang = "en-IN";
+        rec.onresult = e => {
+            const text = e.results[0][0].transcript;
+            $("homeSearch").value = text;
+            const matches = search(text);
+            if (matches.length === 1) goTo(matches[0].id);
+            else { showSuggestions(); $("homeSearch").focus(); }
+        };
+        rec.onerror = e => toast(e.error === "not-allowed"
+            ? "Microphone is blocked. Allow it to search by voice."
+            : "Didn't catch that. Please try again.");
+        rec.onend = () => { listening = null; mic.classList.remove("listening"); };
+
+        try {
+            rec.start();
+            listening = rec;
+            mic.classList.add("listening");
+            toast("🎤 Listening... say a place, like “Block 34”");
+        } catch {
+            toast("Voice search could not start.");
+        }
+    });
 }
 
 /* ---------- events ---------- */
+$("guideBtn").addEventListener("click", startGuide);
+$("guideStop").addEventListener("click", stopGuide);
+$("guideSound").addEventListener("click", () => {
+    voiceOn = !voiceOn;
+    $("guideSound").textContent = voiceOn ? "🔊" : "🔇";
+    if (voiceOn) speak(`Voice on. ${$("guideDist").textContent.replace("🎉", "")}`);
+    else window.speechSynthesis?.cancel();
+});
+$("helpBtn").addEventListener("click", () => $("help").showModal());
+
+document.querySelectorAll("[data-layout]").forEach(b => b.addEventListener("click", () => {
+    layout = b.dataset.layout;
+    document.querySelectorAll("[data-layout]").forEach(x => x.classList.toggle("on", x === b));
+    renderCards();
+}));
+function setZoom(next) {
+    const box = $("pinScroll");
+    const midX = (box.scrollLeft + box.clientWidth / 2) / box.scrollWidth;
+    const midY = (box.scrollTop + box.clientHeight / 2) / box.scrollHeight;
+    zoom = Math.min(3, Math.max(1, next));
+    renderCards();
+    // Keep the same spot in the middle after zooming
+    box.scrollLeft = midX * box.scrollWidth - box.clientWidth / 2;
+    box.scrollTop = midY * box.scrollHeight - box.clientHeight / 2;
+}
+$("zoomIn").addEventListener("click", () => setZoom(zoom + 0.5));
+$("zoomOut").addEventListener("click", () => setZoom(zoom - 0.5));
+window.addEventListener("resize", () => { if (layout === "map" && location.hash === "#explore") renderCards(); });
+
 $("homeSearch").addEventListener("input", showSuggestions);
 $("homeSearch").addEventListener("keydown", e => {
     const items = [...$("suggestions").children];
@@ -474,7 +851,7 @@ $("swapBtn").addEventListener("click", () => {
     updateNavigate();
 });
 
-document.querySelectorAll(".toggle button").forEach(b =>
+document.querySelectorAll("[data-view]").forEach(b =>
     b.addEventListener("click", () => {
         if (b.dataset.view === "route" && $("from").value === "me" && !me) {
             setView("route");
@@ -493,7 +870,7 @@ $("shareBtn").addEventListener("click", async () => {
         if (navigator.share) await navigator.share({ title: "LPU Wayfinder", url: link });
         else {
             await navigator.clipboard.writeText(link);
-            $("message").textContent = "Link copied.";
+            toast("🔗 Link copied");
         }
     } catch (err) {
         if (err.name !== "AbortError") $("message").textContent = "Copy this link: " + link;
@@ -532,27 +909,125 @@ $("nearBtn").addEventListener("click", () => {
         text => { $("exploreNote").textContent = text; });
 });
 
-$("themeBtn").addEventListener("click", () => {
-    const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
-    document.documentElement.dataset.theme = next;
-    save("lpu-theme", next);
-});
+/* ---------- colour themes ---------- */
+const THEMES = { teal: "#0b4f4a", indigo: "#28277c", plum: "#591d4d", night: "#0e191f" };
 
-/* Rotating block number in the headline */
-const blocks = ["34", "18", "30", "36", "32"];
-let turn = 0;
-if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    setInterval(() => {
-        turn = (turn + 1) % blocks.length;
-        const old = $("rotator");
-        old.replaceWith(el("span", { id: "rotator", textContent: blocks[turn] }));
-    }, 2500);
+function applyTheme(name) {
+    document.documentElement.dataset.theme = name;
+    document.querySelector('meta[name="theme-color"]').content = THEMES[name];
+    document.querySelectorAll("[data-colour]").forEach(b =>
+        b.setAttribute("aria-pressed", String(b.dataset.colour === name)));
 }
 
+function closeThemeMenu() {
+    $("themeMenu").hidden = true;
+    $("themeBtn").setAttribute("aria-expanded", "false");
+}
+
+$("themeBtn").addEventListener("click", () => {
+    $("themeMenu").hidden = !$("themeMenu").hidden;
+    $("themeBtn").setAttribute("aria-expanded", String(!$("themeMenu").hidden));
+});
+
+document.querySelectorAll("[data-colour]").forEach(b => b.addEventListener("click", () => {
+    const name = b.dataset.colour;
+    save("lpu-theme", name);
+    // Cross-fade between colours where the browser supports it
+    if (document.startViewTransition) document.startViewTransition(() => applyTheme(name));
+    else applyTheme(name);
+    closeThemeMenu();
+}));
+
+document.addEventListener("click", e => {
+    if (!e.target.closest(".header-actions")) closeThemeMenu();
+});
+document.addEventListener("keydown", e => {
+    if (e.key === "Escape") closeThemeMenu();
+});
+
+/* A soft light on the background follows the mouse or finger */
+let glowFrame = 0;
+function moveGlow(e) {
+    if (glowFrame) return;
+    glowFrame = requestAnimationFrame(() => {
+        glowFrame = 0;
+        document.documentElement.style.setProperty("--mx", `${e.clientX}px`);
+        document.documentElement.style.setProperty("--my", `${e.clientY}px`);
+    });
+}
+window.addEventListener("pointermove", moveGlow, { passive: true });
+window.addEventListener("pointerdown", moveGlow, { passive: true });
+
+/* ---------- block signboard ---------- */
+const blockNumber = p => p.name.match(/^Block (\d+)$/)?.[1];
+const BLOCKS = PLACES.filter(blockNumber).sort((a, b) => blockNumber(a) - blockNumber(b));
+let shown = "block-34";
+let autoPlay = null;
+
+function showBlock(id) {
+    shown = id;
+    const place = byId(id);
+    const number = blockNumber(place);
+    const isSaved = saved.includes(id);
+
+    // A new element restarts the flip animation
+    $("rotator").replaceWith(el("span", { id: "rotator", textContent: number }));
+
+    $("board").replaceChildren(
+        el("div", { className: "board-number", textContent: number }),
+        el("h3", { textContent: place.name }),
+        el("p", { textContent: place.info }),
+        el("span", { className: "distance", textContent: me ? `${pretty(metres(me, place))} from you (straight line)` : "" }),
+        el("div", { className: "row" },
+            button("Take me there", () => goTo(id), "btn signal"),
+            button(isSaved ? "★ Saved" : "☆ Save", () => {
+                stopAutoPlay();
+                toggleSaved(id);
+                showBlock(id);
+                renderHome();
+            }, "btn secondary")));
+
+    [...$("plates").children].forEach(plate =>
+        plate.setAttribute("aria-pressed", String(plate.dataset.id === id)));
+}
+
+function stopAutoPlay() {
+    clearInterval(autoPlay);
+    autoPlay = null;
+}
+
+function renderPlates() {
+    $("plates").replaceChildren(...BLOCKS.map(p => {
+        const plate = button(blockNumber(p), () => { stopAutoPlay(); showBlock(p.id); }, "plate");
+        plate.dataset.id = p.id;
+        plate.setAttribute("aria-label", `${p.name}, ${p.info}`);
+        // On small screens the board is above, so bring it into view
+        plate.addEventListener("click", () => $("board").scrollIntoView({ block: "nearest", behavior: "smooth" }));
+        return plate;
+    }));
+    showBlock(shown);
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    autoPlay = setInterval(() => {
+        if (!$("home").classList.contains("active")) return;
+        const next = (BLOCKS.findIndex(p => p.id === shown) + 1) % BLOCKS.length;
+        showBlock(BLOCKS[next].id);
+    }, 3500);
+}
+
+// The sign stops changing as soon as someone starts using the page
+["pointerenter", "pointerdown", "focusin"].forEach(type => $("board").addEventListener(type, stopAutoPlay));
+$("homeSearch").addEventListener("focus", stopAutoPlay);
+
 /* ---------- start ---------- */
-document.documentElement.dataset.theme = load("lpu-theme",
-    window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+let theme = load("lpu-theme",
+    window.matchMedia("(prefers-color-scheme: dark)").matches ? "night" : "teal");
+if (!Object.hasOwn(THEMES, theme)) theme = theme === "dark" ? "night" : "teal";
+applyTheme(theme);
+renderPlates();
 fillSelects();
+renderNeeds();
+setupVoice();
 renderTiles();
 renderFilterChips();
 window.addEventListener("hashchange", route);
