@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LPU Wayfinder</title>
+    <meta name="theme-color" content="#0b4f4a">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;900&display=swap">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <a class="logo" href="#home">LPU <span>Wayfinder</span></a>
+    <a class="logo" href="#home"><span>LPU</span> Wayfinder</a>
     <nav aria-label="Main">
         <a href="#home" data-tab="home"><b aria-hidden="true">🏠</b>Home</a>
         <a href="#navigate" data-tab="navigate"><b aria-hidden="true">🧭</b>Navigate</a>
         <a href="#explore" data-tab="explore"><b aria-hidden="true">🏫</b>Explore</a>
     </nav>
-    <button id="themeBtn" class="icon-btn" type="button" aria-label="Switch light or dark theme">🌓</button>
+    <div class="header-actions">
+    <button id="helpBtn" class="icon-btn" type="button" aria-label="How to use">❓</button>
+    <button id="themeBtn" class="icon-btn" type="button" aria-label="Choose colour theme" aria-expanded="false" aria-controls="themeMenu">🎨</button>
+    <div id="themeMenu" role="group" aria-label="Colour theme" hidden>
+        <button type="button" data-colour="teal"><i></i>Teal</button>
+        <button type="button" data-colour="indigo"><i></i>Indigo</button>
+        <button type="button" data-colour="plum"><i></i>Plum</button>
+        <button type="button" data-colour="night"><i></i>Night</button>
+    </div>
+    </div>
 </header>
 
 <main>
@@ -23,22 +36,32 @@
     <!-- ========== SCREEN 1: HOME ========== -->
     <section id="home" class="screen">
         <div class="hero">
-            <p class="eyebrow">LOVELY PROFESSIONAL UNIVERSITY</p>
-            <h1>Which block is <span id="rotator">34</span>?</h1>
-            <p>Type a block number, building or facility and get there with Google Maps.</p>
+            <div class="hero-main">
+                <h1>Which block is <span class="nowrap"><span id="rotator">34</span>?</span></h1>
+                <p>Search any block or facility at Lovely Professional University and walk there with Google Maps.</p>
 
-            <div class="search-box">
-                <input id="homeSearch" type="search" autocomplete="off"
-                       placeholder="Try 34, library, hospital, food..."
-                       aria-label="Search campus places">
-                <button id="homeGo" type="button">Find</button>
-                <ul id="suggestions" hidden></ul>
+                <div class="search-box">
+                    <input id="homeSearch" type="search" autocomplete="off"
+                           placeholder="Try 34, library, food..."
+                           aria-label="Search campus places">
+                    <button id="micBtn" type="button" aria-label="Search by voice" hidden>🎤</button>
+                    <button id="homeGo" type="button">Find</button>
+                    <ul id="suggestions" hidden></ul>
+                </div>
+
+                <div id="recent" class="chips"></div>
             </div>
 
-            <div id="recent" class="chips"></div>
+            <article id="board" aria-label="Selected block"></article>
         </div>
 
-        <h2>Quick find</h2>
+        <h2>Tap a block number</h2>
+        <div id="plates" class="plates" role="group" aria-label="Block numbers"></div>
+
+        <h2>I need…</h2>
+        <div id="needs" class="needs"></div>
+
+        <h2>Browse by category</h2>
         <div id="categoryTiles" class="tiles"></div>
 
         <div id="savedWrap" hidden>
@@ -74,6 +97,8 @@
 
                 <a id="startBtn" class="btn primary" target="_blank" rel="noopener noreferrer">▶ Start in Google Maps</a>
 
+                <button id="guideBtn" type="button" class="btn guide-start">🚶 Live walking guide</button>
+
                 <div class="actions">
                     <a id="streetBtn" class="btn secondary" target="_blank" rel="noopener noreferrer">👁 Street View</a>
                     <button id="saveBtn" type="button" class="btn secondary">☆ Save</button>
@@ -104,7 +129,13 @@
 
     <!-- ========== SCREEN 3: EXPLORE ========== -->
     <section id="explore" class="screen">
-        <h2>Explore campus</h2>
+        <div class="explore-head">
+            <h2>Explore campus</h2>
+            <div class="toggle" role="group" aria-label="Explore layout">
+                <button type="button" data-layout="list" class="on">▦ List</button>
+                <button type="button" data-layout="map">📌 Pin map</button>
+            </div>
+        </div>
         <div class="toolbar">
             <input id="filter" type="search" placeholder="Filter places..." aria-label="Filter places">
             <button id="nearBtn" type="button" class="btn secondary">📡 Sort by nearest</button>
@@ -112,9 +143,49 @@
         <div id="filterChips" class="chips"></div>
         <p id="exploreNote" class="note" role="status"></p>
         <div id="cards" class="cards"></div>
+
+        <div id="pinMapWrap" hidden>
+            <div class="zoom">
+                <button id="zoomOut" type="button" class="btn secondary" aria-label="Zoom out">−</button>
+                <button id="zoomIn" type="button" class="btn secondary" aria-label="Zoom in">+</button>
+                <span>Tap a pin. North is up. Pin positions are approximate.</span>
+            </div>
+            <div id="pinScroll"><div id="pinMap"></div></div>
+            <div id="pinInfo" class="card" aria-live="polite" hidden></div>
+        </div>
     </section>
 
 </main>
+
+<div id="guide" role="region" aria-label="Live walking guide" hidden>
+    <div class="guide-top">
+        <strong id="guideTitle"></strong>
+        <button id="guideSound" type="button" class="icon-btn" aria-label="Turn voice on or off">🔇</button>
+    </div>
+    <div class="guide-body">
+        <div class="compass"><span class="north">N</span><div id="arrow">⬆</div></div>
+        <div>
+            <div id="guideDist" aria-live="polite">…</div>
+            <div id="guideDir"></div>
+        </div>
+    </div>
+    <progress id="guideBar" max="100" value="0" aria-label="Progress to destination"></progress>
+    <small>The arrow points straight at the destination. Follow paths and roads, or use Google Maps for the route.</small>
+    <button id="guideStop" type="button" class="btn primary">Stop guide</button>
+</div>
+
+<dialog id="help">
+    <h2>How to use</h2>
+    <ol>
+        <li><b>Search</b> a block number or place, speak it, or tap an “I need…” button.</li>
+        <li><b>Check</b> the map and choose where you are starting from.</li>
+        <li><b>Walk</b> with Google Maps directions or the live walking guide.</li>
+    </ol>
+    <p>Tap ☆ to save places you visit often.</p>
+    <form method="dialog"><button class="btn primary">Got it</button></form>
+</dialog>
+
+<div id="toast" role="status" aria-live="polite"></div>
 
 <footer>
     LPU Wayfinder | Design Thinking Project<br>
